@@ -7,8 +7,8 @@ def get_access_token():
     url = 'https://aip.baidubce.com/oauth/2.0/token'
     params = {
         'grant_type': 'client_credentials',
-        'client_id': 'EtqI0YQqionPDxixlBPVfrLv',
-        'client_secret': 'x3wZB1euVh30sqKwQx3zUlxSGQMzE7WQ'
+        'client_id': '',
+        'client_secret': ''
     }
     response = requests.post(url, params)
     access_token = eval(response.text)['access_token']
